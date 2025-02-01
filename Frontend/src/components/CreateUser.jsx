@@ -18,7 +18,7 @@ function CreateUser() {
     e.preventDefault(); // Fix: Moved this to the top
 
     try {
-      let response = await axios.post("http://localhost:8080/api/user", user);
+      let response = await axios.post("https://full-stack1-6.onrender.com/api/user", user);
       if (response.data?.message) {
         alert(response.data.message);
       }
